@@ -1,0 +1,10 @@
+# ZenML artifacts
+.zen/
+
+# Model checkpoints and training outputs
+checkpoints/
+
+# Python cache files
+**/__pycache__/
+*.py[cod]
+*$py.class
