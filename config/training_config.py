@@ -11,21 +11,21 @@ class TrainingConfig:
     gradient_accumulation_steps: int = 1
     learning_rate: float = 1e-5
     warmup_steps: int = 500
-    max_steps: int = 2000
+    max_steps: int = 1000
     gradient_checkpointing: bool = False
     fp16: bool = True
     
     # Evaluation parameters
-    eval_strategy: str = "steps"
+    eval_strategy: str = "no"
     per_device_eval_batch_size: int = 4
-    predict_with_generate: bool = True
+    predict_with_generate: bool = False
     generation_max_length: int = 225
-    save_steps: int = 1000
+    save_steps: int = 250
     eval_steps: int = 1000
     logging_steps: int = 100
     
     # Model selection
-    load_best_model_at_end: bool = True
+    load_best_model_at_end: bool = False
     metric_for_best_model: str = "wer"
     greater_is_better: bool = False
     

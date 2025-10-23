@@ -39,7 +39,7 @@ def train_model_step(dataset: DatasetDict, config: TrainingConfig) -> str:
         "unique_model_name": unique_model_name
     })
     
-    print(f" Training Configuration:")
+    print(f"Training Configuration:")
     print(f"   Model: {config.model_name}")
     print(f"   Unique Name: {unique_model_name}")
     print(f"   Batch Size: {config.per_device_train_batch_size}")
