@@ -17,7 +17,7 @@ While Whisper-small is a powerful multilingual model, our experiments revealed s
 This work shows that while multilingual models provide a strong foundation, domain-specific fine-tuning is essential for underrepresented languages like Amharic.
 
 ### **🤗 Try the Model**
-**[→ Interactive Demo on Hugging Face Spaces](https://huggingface.co/spaces/your-username/whisper-amharic-demo)**
+**[→ Interactive Demo on Hugging Face Spaces](https://huggingface.co/spaces/chappM/whisper-amharic-transcriber)**
 
 Test the fine-tuned model with your own Amharic audio files or try our sample recordings.
 
