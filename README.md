@@ -46,9 +46,6 @@ graph LR
     B2[Text Tokenize<br/>Amharic Script]
     B3[Feature Extract<br/>Mel Spectrograms]
     
-    C1[Memory Optimize<br/>Batch Size: 8]
-    C2[Learning Rate: 1e-5<br/>Warmup: 500 steps]
-    C3[Checkpointing<br/>Every 250 steps]
 ```
 
 ## 📊 **Results**
