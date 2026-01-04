@@ -1,6 +1,9 @@
 # Whisper Fine-tuning for Amharic Speech Recognition
 Fine-tuning OpenAI Whisper for Amharic speech recognition using production-ready MLOps practices.
 
+[![🤗 Hugging Face Spaces](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/chappM/whisper-amharic-transcriber)
+[![Model](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-yellow)](https://huggingface.co/chappM/whisper-amharic-small-v2)
+
 ## 🎯 **Overview**
 
 This project addresses the critical gap in **Amharic speech recognition** by fine-tuning OpenAI's Whisper model (small) on Mozilla's Common Voice dataset. Amharic, spoken by 25+ million people in Ethiopia, has limited ASR resources, making this work impactful for language accessibility.
@@ -8,10 +11,16 @@ This project addresses the critical gap in **Amharic speech recognition** by fin
 ### **Key Insights from Results**
 While Whisper-small is a powerful multilingual model, our experiments revealed significant challenges with Amharic out-of-the-box:
 - **Baseline struggles**: The pretrained model often failed to recognize Amharic speech, producing nonsensical outputs (e.g., "2.5." for complex sentences) and achieving a WER of 231.58%.
-- **Fine-tuning breakthrough**: After fine-tuning on just 698 Amharic samples, transcriptions became remarkably better, reducing WER to 77.54% - a **65.5% relative improvement**.
+- **Fine-tuning breakthrough**: After fine-tuning on just 698 Amharic samples, transcriptions became remarkably better, reducing WER to 69.64% - a **69.9% relative improvement**.
 - **Quality over perfection**: Even with room for optimization, the fine-tuned model produces coherent, contextually relevant transcriptions that closely match ground truth, demonstrating the potential for low-resource language ASR through targeted fine-tuning.
 
 This work shows that while multilingual models provide a strong foundation, domain-specific fine-tuning is essential for underrepresented languages like Amharic.
+
+### **🤗 Try the Model**
+**[→ Interactive Demo on Hugging Face Spaces](https://huggingface.co/spaces/your-username/whisper-amharic-demo)**
+
+Test the fine-tuned model with your own Amharic audio files or try our sample recordings.
+
 
 ## 🛠️ **Technology Stack**
 
@@ -46,10 +55,10 @@ graph LR
 
 ### **Performance Improvement**
 
-| Model | Word Error Rate (WER) | Improvement | Training Time |
-|-------|----------------------|-------------|---------------|
-| **Baseline (Pretrained)** | 231.58% | - | - |
-| **Fine-tuned** | 77.54% | ↓65.5% | 2.5 hours |
+| Model | Word Error Rate (WER) | Improvement |
+|-------|----------------------|-------------|
+| **Baseline (Pretrained)** | 231.58% | - |
+| **Fine-tuned** | 69.64% | ↓69.9% |
 
 ### **Sample Transcriptions**
 
@@ -101,7 +110,6 @@ python run_training_pipeline.py
 I'm actively working on further improving the model's performance:
 - **Target WER < 40%**: Optimizing hyperparameters, data augmentation, and training strategies
 - **Custom Dataset Testing**: Evaluating on diverse Amharic datasets beyond Common Voice
-- **Model Deployment**: Pushing improved versions to Hugging Face Hub for community access (Coming Soon!)
 
 ## 📚 **References**
 
