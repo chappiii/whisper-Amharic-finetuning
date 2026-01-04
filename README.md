@@ -112,8 +112,3 @@ I'm actively working on further improving the model's performance:
 
 1. [Fine-Tune Whisper For Multilingual ASR with 🤗 Transformers](https://huggingface.co/blog/fine-tune-whisper)
 2. [Mozilla Common Voice Dataset](https://commonvoice.mozilla.org/en/datasets)
----
-
-<div align="center">
-
-</div>
