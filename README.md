@@ -45,10 +45,17 @@ Test the latest fine-tuned model with your own Amharic audio files or try our sa
 
 ### **Sample Transcriptions**
 
-| Audio Sample | Ground Truth | Baseline | Fine-tuned |
-|--------------|-------------|----------|------------|
+**v2 Model (Common Voice)**
+| Audio Sample | Ground Truth | Baseline | Fine-tuned v2 |
+|--------------|-------------|----------|---------------|
 | **Sample 1** | ኑሮው ቀን በቀን ይፋጃል። | Nouraouk and Bekanifajal | ኖራው ቀን በቃኔፋው ይፋጨን። ✅ |
 | **Sample 2** | አንዳንዶች ፊልምና ዶክመንታሪ ይሰራሉ። | and then don't fillmen a documentary is harallu. | አንዳንዶች ፊልም እና ደውክመን ተሪ ይሰራሉ። ✅ |
+
+**v3 Model (Common Voice + FLEURS)**
+| Audio Sample | Ground Truth | Fine-tuned v3 |
+|--------------|-------------|---------------|
+| **Sample 1** | ኑሮው ቀን በቀን ይፋጃል። | ኑሮው ቀን በቀን ይፋጃል። ✅✅ |
+| **Sample 2** | አንዳንዶች ፊልምና ዶክመንታሪ ይሰራሉ። | አንዳንዶች ፊልምና ዶክመንታሪ ይሰራሉ። ✅✅ |
 
 While the Whisper-small pretrained model struggled to even detect Amharic—often producing transcriptions in the wrong language or nonsensical outputs—our **v2 fine-tuned model showed dramatic improvement**. After fine-tuning on Common Voice, the predictions became much closer to the ground truth. Although not perfect, they were contextually accurate and demonstrated that the model was learning the language.
 
